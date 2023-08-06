@@ -57,41 +57,41 @@
 
 
 
+
    /* move header
     * -------------------------------------------------- */
-    const ssMoveHeader = function () {
+   const ssMoveHeader = function () {
 
-        const $hero = $('.s-hero'),
-              $hdr = $('.s-header'),
-              triggerHeight = $hero.outerHeight() - 170;
+    const $hero = $('.s-hero'),
+          $hdr = $('.s-header'),
+          triggerHeight = $hero.outerHeight() - 170;
 
 
-        $WIN.on('scroll', function () {
+    $WIN.on('scroll', function () {
 
-            let loc = $WIN.scrollTop();
+        let loc = $WIN.scrollTop();
 
-            if (loc > triggerHeight) {
-                $hdr.addClass('sticky');
-            } else {
-                $hdr.removeClass('sticky');
-            }
+        if (loc > triggerHeight) {
+            $hdr.addClass('sticky');
+        } else {
+            $hdr.removeClass('sticky');
+        }
 
-            if (loc > triggerHeight + 20) {
-                $hdr.addClass('offset');
-            } else {
-                $hdr.removeClass('offset');
-            }
+        if (loc > triggerHeight + 20) {
+            $hdr.addClass('offset');
+        } else {
+            $hdr.removeClass('offset');
+        }
 
-            if (loc > triggerHeight + 150) {
-                $hdr.addClass('scrolling');
-            } else {
-                $hdr.removeClass('scrolling');
-            }
+        if (loc > triggerHeight + 150) {
+            $hdr.addClass('scrolling');
+        } else {
+            $hdr.removeClass('scrolling');
+        }
 
-        });
+    });
 
-    };
-
+};
 
 
    /* mobile menu
@@ -333,8 +333,8 @@
 })(jQuery);
 
 
-$(document).on('click', () => {
-            $('#opening-animation').fadeOut(2000);
-            $(document).off('click');
-        });
-        setTimeout(() => $('#opening-animation').remove(), 6500);
+// $(document).on('click', () => {
+//             $('#opening-animation').fadeOut(2000);
+//             $(document).off('click');
+//         });
+//         setTimeout(() => $('#opening-animation').remove(), 6500);
