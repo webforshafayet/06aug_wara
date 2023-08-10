@@ -61,11 +61,12 @@
   .container_people .card
   {
       max-width: 340px;
-      height: 115px;
+      height: 200px;
       margin: 50px 20px;
       padding: 20px 0px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.5);
       transition: 0.3s ease-in-out;
+      border-radius: 10px;
   }
   .container_people .card:hover
   {
@@ -85,6 +86,12 @@
   {
       max-width: 100%;
       border-radius: 4px;
+      
+      width: 100%;  
+    object-fit: cover;  
+    height: 200px;  
+    object-position: top;  
+    
   }
   .container_people .card .content_people
   {
@@ -105,6 +112,11 @@
       opacity: 1;
       margin-top: -40px;
       transition-delay: 0.3s;
+  }
+
+
+  .visible_name{
+    margin-top: -4vh;
   }
   
   @media (max-width: 330px){
@@ -203,7 +215,9 @@
          
             <!-- header
             ================================================== -->
-            <header class="s-header  animate__slower">
+            <header class="s-header  animate__slower"  style=" position: sticky;
+            top: 0;background-color: var(--color-gray-19);">
+         
 
  
         
@@ -219,14 +233,14 @@
                         <ul class="s-header__nav  ">
                             <li><a href="index.html" title="Home">Home</a></li>
                             <li><a href="people.html" title="People">People</a></li>
-                            <li><a  href="program.html" title="Program">Program</a></li>
+                            <li><a  href="program.html" title="Program">Programs</a></li>
                               <li><a  href="apply.html" title="Apply">Apply</a></li>
                         </ul>
                     </nav> <!-- end s-header__nav-wrap -->
         
 
                 
-                    <a href="mailto:#0" class="btn btn--primary btn--small  get_in_touch" style="background-color: transparent; border: none; 
+                    <a href="https://mail.google.com/mail/?view=cm&to=wara@gmail.com" class="btn btn--primary btn--small  get_in_touch" style="background-color: transparent; border: none; 
                      list-style: none;
     font-family: var(--font-2);
     font-weight: 900;
@@ -264,7 +278,7 @@
                 <div class="row">
                     <div class="column large-12">
         
-                        <div class="section-title button" cursor="link" data-num="01" data-aos="zoom-out-up" data-aos-duration="2000">
+                        <div class="section-title button" cursor="link" data-num="00" data-aos="zoom-out-up" data-aos-duration="2000">
                             <h3 class="h6">PEOPLE</h3>
                         </div>
         
@@ -336,11 +350,12 @@
 
                   <div class="card d-flex position-relative flex-column">
                     <div class='imgContainer_people'>
-                        <img src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
-                        
+                        <img src='images/people.jpg'>
+                        <h5 class="visible_name">Shahriar Amin</h5>
                     </div>
+            
                     <div class="content_people">
-                        <h5>Shahriar Amin, CEO, WARA Ventures</h5>
+                        <h5>CEO, WARA Ventures</h5>
                         <p>GTM, Brand & Business Strategy Specialist. <br> 
                           Trainer. Management Book Author. Teacher <br>
                           Ex-Philip Morris International, Ex-Grameenphone <br>
@@ -352,11 +367,12 @@
 
                 <div class="card d-flex position-relative flex-column">
                   <div class='imgContainer_people'>
-                      <img src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+                     <img src='images/people.jpg'>
+                     <h5 class="visible_name">Shahriar Amin</h5>
                       
                   </div>
                   <div class="content_people">
-                      <h5>Shahriar Amin, CEO, WARA Ventures</h5>
+                      <h5>CEO, WARA Ventures</h5>
                       <p>GTM, Brand & Business Strategy Specialist. <br> 
                         Trainer. Management Book Author. Teacher <br>
                         Ex-Philip Morris International, Ex-Grameenphone <br>
@@ -367,11 +383,12 @@
 
               <div class="card d-flex position-relative flex-column">
                 <div class='imgContainer_people'>
-                    <img src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+                   <img src='images/people.jpg'>
+                   <h5 class="visible_name">Shahriar Amin</h5>
                     
                 </div>
                 <div class="content_people">
-                    <h5>Shahriar Amin, CEO, WARA Ventures</h5>
+                    <h5>CEO, WARA Ventures</h5>
                     <p>GTM, Brand & Business Strategy Specialist. <br> 
                       Trainer. Management Book Author. Teacher <br>
                       Ex-Philip Morris International, Ex-Grameenphone<br>
@@ -397,11 +414,12 @@
 
             <div class="card d-flex position-relative flex-column">
               <div class='imgContainer_people'>
-                  <img src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+                 <img src='images/people.jpg'>
+                 <h5 class="visible_name">Shahriar Amin</h5>
                   
               </div>
               <div class="content_people">
-                  <h5>Shahriar Amin, CEO, WARA Ventures</h5>
+                  <h5>CEO, WARA Ventures</h5>
                   <p>GTM, Brand & Business Strategy Specialist. <br> 
                     Trainer. Management Book Author. Teacher <br>
                     Ex-Philip Morris International, Ex-Grameenphone <br>
@@ -413,11 +431,12 @@
 
           <div class="card d-flex position-relative flex-column">
             <div class='imgContainer_people'>
-                <img src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+               <img src='images/people.jpg'>
+               <h5 class="visible_name">Shahriar Amin</h5>
                 
             </div>
             <div class="content_people">
-                <h5>Shahriar Amin, CEO, WARA Ventures</h5>
+                <h5>CEO, WARA Ventures</h5>
                 <p>GTM, Brand & Business Strategy Specialist. <br> 
                   Trainer. Management Book Author. Teacher <br>
                   Ex-Philip Morris International, Ex-Grameenphone <br>
@@ -428,11 +447,12 @@
 
         <div class="card d-flex position-relative flex-column">
           <div class='imgContainer_people'>
-              <img src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+             <img src='images/people.jpg'>
+             <h5 class="visible_name">Shahriar Amin</h5>
               
           </div>
           <div class="content_people">
-              <h5>Shahriar Amin, CEO, WARA Ventures</h5>
+              <h5>CEO, WARA Ventures</h5>
               <p>GTM, Brand & Business Strategy Specialist. <br> 
                 Trainer. Management Book Author. Teacher <br>
                 Ex-Philip Morris International, Ex-Grameenphone<br>
@@ -465,11 +485,12 @@
       
           <div class="card d-flex position-relative flex-column">
             <div class='imgContainer_people'>
-                <img src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+               <img src='images/people.jpg'>
+               <h5 class="visible_name">Shahriar Amin</h5>
                 
             </div>
             <div class="content_people">
-                <h5>Shahriar Amin, CEO, WARA Ventures</h5>
+                <h5>CEO, WARA Ventures</h5>
                 <p>GTM, Brand & Business Strategy Specialist. <br> 
                   Trainer. Management Book Author. Teacher <br>
                   Ex-Philip Morris International, Ex-Grameenphone <br>
@@ -481,11 +502,12 @@
 
         <div class="card d-flex position-relative flex-column">
           <div class='imgContainer_people'>
-              <img src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+             <img src='images/people.jpg'>
+             <h5 class="visible_name">Shahriar Amin</h5>
               
           </div>
           <div class="content_people">
-              <h5>Shahriar Amin, CEO, WARA Ventures</h5>
+              <h5>CEO, WARA Ventures</h5>
               <p>GTM, Brand & Business Strategy Specialist. <br> 
                 Trainer. Management Book Author. Teacher <br>
                 Ex-Philip Morris International, Ex-Grameenphone <br>
@@ -496,11 +518,12 @@
 
       <div class="card d-flex position-relative flex-column">
         <div class='imgContainer_people'>
-            <img src='https://images.pexels.com/photos/1456268/pexels-photo-1456268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'>
+           <img src='images/people.jpg'>
+           <h5 class="visible_name">Shahriar Amin</h5>
             
         </div>
         <div class="content_people">
-            <h5>Shahriar Amin, CEO, WARA Ventures</h5>
+            <h5>CEO, WARA Ventures</h5>
             <p>GTM, Brand & Business Strategy Specialist. <br> 
               Trainer. Management Book Author. Teacher <br>
               Ex-Philip Morris International, Ex-Grameenphone<br>
@@ -508,6 +531,67 @@
         </div>
     </div>
           
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="card d-flex position-relative flex-column">
+        <div class='imgContainer_people'>
+           <img src='images/people.jpg'>
+           <h5 class="visible_name">Shahriar Amin</h5>
+            
+        </div>
+        <div class="content_people">
+            <h5>CEO, WARA Ventures</h5>
+            <p>GTM, Brand & Business Strategy Specialist. <br> 
+              Trainer. Management Book Author. Teacher <br>
+              Ex-Philip Morris International, Ex-Grameenphone <br>
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="card d-flex position-relative flex-column">
+      <div class='imgContainer_people'>
+         <img src='images/people.jpg'>
+         <h5 class="visible_name">Shahriar Amin</h5>
+          
+      </div>
+      <div class="content_people">
+          <h5>CEO, WARA Ventures</h5>
+          <p>GTM, Brand & Business Strategy Specialist. <br> 
+            Trainer. Management Book Author. Teacher <br>
+            Ex-Philip Morris International, Ex-Grameenphone <br>
+          </p>
+      </div>
+  </div>
+
+
+  <div class="card d-flex position-relative flex-column">
+    <div class='imgContainer_people'>
+       <img src='images/people.jpg'>
+       <h5 class="visible_name">Shahriar Amin</h5>
+        
+    </div>
+    <div class="content_people">
+        <h5>CEO, WARA Ventures</h5>
+        <p>GTM, Brand & Business Strategy Specialist. <br> 
+          Trainer. Management Book Author. Teacher <br>
+          Ex-Philip Morris International, Ex-Grameenphone<br>
+      </p>
+    </div>
+</div>
               
               
  
@@ -605,7 +689,7 @@
                     </div>
         
                     <div class="column large-4 medium-12 s-footer__block--end">
-                        <a href="mailto:#0" class="btn h-full-width">Let's Talk</a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=wara@gmail.com" class="btn h-full-width">Let's Talk</a>
         
                         <div class="ss-copyright">
                             <span>Copyright  2023</span> 

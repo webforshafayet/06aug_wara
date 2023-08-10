@@ -49,6 +49,8 @@
 
 
 <style>
+
+ 
     p{
         color: white;
     }
@@ -116,7 +118,7 @@ section#timeline article div.inner span.date span.month {
   font-size: 18px;
 }
 section#timeline article div.inner span.date span.year {
-    margin-top: -15px;
+    margin-top: -18px;
   font-size: 10px;
 }
 section#timeline article div.inner h2 {
@@ -161,7 +163,11 @@ section#timeline article div.inner p span{
  
 }
 
+.focus_area{
+ padding-bottom : 2px;
+}
 
+ 
 @media (max-width:800px){
     section#timeline article div.inner h2 {
  
@@ -170,6 +176,18 @@ section#timeline article div.inner p span{
   font-weight: 900;
   line-height: 1em;
 }
+
+
+.focus_area{
+ padding-bottom : 5px;
+}
+
+
+section#timeline article div.inner span.date span.year {
+    margin-top: -14px;
+ 
+}
+
  
 section#timeline article div.inner p {
  
@@ -248,6 +266,12 @@ section#timeline article:nth-child(8) div.inner h2:after {
   background: #fff;
 }
 
+
+
+.service-icon{
+  padding-bottom: 80px;
+}
+
 </style>
  
 
@@ -307,7 +331,8 @@ section#timeline article:nth-child(8) div.inner h2:after {
          
             <!-- header
             ================================================== -->
-            <header class="s-header  animate__slower">
+            <header class="s-header  animate__slower"  style=" position: sticky;
+            top: 0;background-color: var(--color-gray-19);">
 
 
               <!-- <header class="s-header animate__animated animate__fadeInDownBig  "> -->
@@ -324,14 +349,14 @@ section#timeline article:nth-child(8) div.inner h2:after {
                         <ul class="s-header__nav  ">
                             <li><a href="index.html" title="Home">Home</a></li>
                             <li><a href="people.html" title="People">People</a></li>
-                            <li><a  href="program.html" title="Program">Program</a></li>
+                            <li><a  href="program.html" title="Program">Programs</a></li>
                               <li><a  href="apply.html" title="Apply">Apply</a></li>
                         </ul>
                     </nav> <!-- end s-header__nav-wrap -->
         
 
                 
-                    <a href="mailto:#0" class="btn btn--primary btn--small  get_in_touch" style="background-color: transparent; border: none; 
+                    <a href="https://mail.google.com/mail/?view=cm&to=wara@gmail.com" class="btn btn--primary btn--small  get_in_touch" style="background-color: transparent; border: none; 
                      list-style: none;
     font-family: var(--font-2);
     font-weight: 900;
@@ -375,7 +400,7 @@ section#timeline article:nth-child(8) div.inner h2:after {
                     <div class="column large-12">
         
                         <div class="section-title button" cursor="link" data-num="00" data-aos="zoom-out-up" data-aos-duration="2000">
-                            <h3 class="h6"> OUR PROGRAM</h3>
+                            <h3 class="h6"> OUR PROGRAMS</h3>
                         </div>
         
                     </div>
@@ -481,20 +506,20 @@ section#timeline article:nth-child(8) div.inner h2:after {
                 <div class="row block-large-1-3 block-tab-full s-about__process item-list" style="margin-top: 30px;padding-bottom: 50px">
                     <div class="column item item-process button" cursor="link" data-aos="fade-up">
                         <h3 style="font-size: 18px;" class="item-title "  data-aos="fade-right"
-                        data-aos-duration="1000"><p style="padding-left: 10px;" data-aos="fade-left" data-aos-duration="2000">
+                        data-aos-duration="1000"><p style="padding-left: 25px;" data-aos="fade-left" data-aos-duration="2000">
                             Most incubations focus on fundraising, and not enough on upskilling the team; creating a lack of people-fitness.
                         </p></h3>
                          
                     </div>
                     <div class="column item item-process button" cursor="link" data-aos="fade-up">
                         <h3 style="font-size: 18px;" class="item-title "  data-aos="fade-right"
-                        data-aos-duration="1000"><p style="padding-left: 10px;" data-aos="fade-left" data-aos-duration="2000">
+                        data-aos-duration="1000"><p style="padding-left: 25px;" data-aos="fade-left" data-aos-duration="2000">
                             Most founders are technology experts, but what they lack is business development, and customer acquisition expertise; which contributes to the lack of business-model fitness.
                         </p></h3>
                     </div>
                     <div class="column item item-process button" cursor="link" data-aos="fade-up">
                         <h3 style="font-size: 18px;" class="item-title "  data-aos="fade-right"
-                        data-aos-duration="1000"><p style="padding-left: 10px;" data-aos="fade-left" data-aos-duration="2000">
+                        data-aos-duration="1000"><p style="padding-left: 25px;" data-aos="fade-left" data-aos-duration="2000">
                             Most startups fail to create hypergrowth after promising such growth during angel, pre-seed or seed-level investments.
                         </p></h3>
                     </div>
@@ -552,16 +577,27 @@ section#timeline article:nth-child(8) div.inner h2:after {
 
                         <section id="timeline">
                             <article>
-                              <div class="inner">
+                              <div class="inner" >
                                 <span class="date">
                                   <!-- <span class="day">30<sup>th</sup></span> -->
                                   <span class="month">1st</span>
                                   <span class="year">WEEK</span>
                                 </span>
-                                <h2>Focus Areas : <strong>Overview</strong> </h2>
+
+
+
+                                <div data-aos="zoom-in-right"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000">
+                                <h2> <div class="focus_area" >
+                                  Focus Areas :
+                                </div>  <strong>Overview</strong> </h2>
                                 <p> <span style="color:#f14924">
                                     Training Session Topic : 
                                 </span>  What To Expect</p>
+                                </div>
+                          
+                                
 
                               </div>
                             </article>
@@ -572,10 +608,23 @@ section#timeline article:nth-child(8) div.inner h2:after {
                                       <span class="month">2nd</span>
                                       <span class="year">WEEK</span>
                                     </span>
-                                    <h2>Focus Areas : <strong>Problem-Solution Fitness</strong> </h2>
+
+                                    <div data-aos="zoom-in-left"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                    <h2>  
+                                      <div class="focus_area" >
+                                        Focus Areas :
+                                      </div>
+                                   <strong>Problem-Solution Fitness</strong> </h2>
                                     <p> <span style="color:#f14924">
                                         Training Session Topic : 
                                     </span>  Problem Solution</p>
+                                    </div>
+
+
+
+                                     
     
                                   </div>
                             </article>
@@ -586,10 +635,18 @@ section#timeline article:nth-child(8) div.inner h2:after {
                                       <span class="month">3rd</span>
                                       <span class="year">WEEK</span>
                                     </span>
-                                    <h2>Focus Areas : <strong>Product-Market Fitness</strong> </h2>
-                                    <p> <span style="color:#f14924">
-                                        Training Session Topic : 
-                                    </span>Product Market Fit</p>
+
+                                    <div data-aos="zoom-in-right"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                      <h2 ><div class="focus_area" >
+                                        Focus Areas :
+                                      </div> <strong>Product-Market Fitness</strong> </h2>
+                                      <p> <span style="color:#f14924">
+                                          Training Session Topic : 
+                                      </span>Product Market Fit</p>
+                                    </div>
+                                     
     
                                   </div>
                             </article>
@@ -600,10 +657,23 @@ section#timeline article:nth-child(8) div.inner h2:after {
                                       <span class="month">4th</span>
                                       <span class="year">WEEK</span>
                                     </span>
-                                    <h2>Focus Areas : <strong>Go-to-market Fitness</strong> </h2>
+                              
+
+
+
+                                    <div data-aos="zoom-in-left"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                    <h2><div class="focus_area" >
+                                      Focus Areas :
+                                    </div> <strong>Go-to-market Fitness</strong> </h2>
                                     <p> <span style="color:#f14924">
                                         Training Session Topic : 
                                     </span>  Go-To-Market (GTM)</p>
+                                    </div>
+
+
+
     
                                   </div>
                             </article>
@@ -614,10 +684,24 @@ section#timeline article:nth-child(8) div.inner h2:after {
                                       <span class="month">5th</span>
                                       <span class="year">WEEK</span>
                                     </span>
-                                    <h2>Focus Areas : <strong>Target-Messaging Fitness</strong> </h2>
+
+
+
+                                    <div data-aos="zoom-in-right"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                    <h2><div class="focus_area" >
+                                      Focus Areas :
+                                    </div> <strong>Target-Messaging Fitness</strong> </h2>
                                     <p> <span style="color:#f14924">
                                         Training Session Topic : 
                                     </span>  Brand Building</p>
+                                    </div>
+
+
+
+
+                                   
     
                                   </div>
                             </article>
@@ -628,10 +712,23 @@ section#timeline article:nth-child(8) div.inner h2:after {
                                       <span class="month">6th</span>
                                       <span class="year">WEEK</span>
                                     </span>
-                                    <h2>Focus Areas : <strong>Growth-capability Fitness</strong> </h2>
+                                 
+
+
+
+                                    <div data-aos="zoom-in-left"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                    <h2><div class="focus_area" >
+                                      Focus Areas :
+                                    </div> <strong>Growth-capability Fitness</strong> </h2>
                                     <p> <span style="color:#f14924">
                                         Training Session Topic : 
                                     </span>  Scale Up</p>
+
+                                    </div>
+
+                                    
     
                                   </div>
                             </article>
@@ -642,10 +739,23 @@ section#timeline article:nth-child(8) div.inner h2:after {
                                   <span class="month">7TH</span>
                                   <span class="year">WEEK</span>
                                 </span>
-                                <h2>Focus Areas : <strong>Individual Upskilling</strong> </h2>
+                                
+
+
+
+
+                                <div data-aos="zoom-in-right"
+                                data-aos-easing="linear"
+                                data-aos-duration="1000">
+                                <h2><div class="focus_area" >
+                                  Focus Areas :
+                                </div> <strong>Individual Upskilling</strong> </h2>
                                 <p> <span style="color:#f14924">
                                     Training Session Topic : 
                                 </span>  Presentation Skills</p>
+                                </div>
+
+
 
                               </div>
                             </article>
@@ -656,10 +766,20 @@ section#timeline article:nth-child(8) div.inner h2:after {
                                       <span class="month">8th</span>
                                       <span class="year">WEEK</span>
                                     </span>
-                                    <h2>Focus Areas : <strong>Individual Upskilling</strong> </h2>
+                                    
+
+                                    <div data-aos="zoom-in-left"
+                                    data-aos-easing="linear"
+                                    data-aos-duration="1000">
+                                    <h2><div class="focus_area" >
+                                      Focus Areas :
+                                    </div> <strong>Individual Upskilling</strong> </h2>
                                     <p> <span style="color:#f14924">
                                         Training Session Topic : 
                                     </span>  Fundraising</p>
+
+
+                                    </div>
     
                                   </div>
                             </article>
@@ -1062,7 +1182,7 @@ section#timeline article:nth-child(8) div.inner h2:after {
                     </div>
         
                     <div class="column large-4 medium-12 s-footer__block--end">
-                        <a href="mailto:#0" class="btn h-full-width">Let's Talk</a>
+                        <a href="https://mail.google.com/mail/?view=cm&to=wara@gmail.com" class="btn h-full-width">Let's Talk</a>
         
                         <div class="ss-copyright">
                             <span>Copyright  2023</span> 

@@ -4071,7 +4071,7 @@ html.no-csstransitions .s-hero__content {
 
     .s-hero__content h1 {
         
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         padding-top: 1vh;
     }
 
@@ -4106,7 +4106,7 @@ html.no-csstransitions .s-hero__content {
  * ------------------------------------------------------------------- */
 .s-about {
     background-color: var(--color-bg);
-    padding-top: calc(7 * var(--space));
+    padding-top: calc(2 * var(--space));
     padding-bottom: 0;
     position: relative;
 }
@@ -4212,7 +4212,7 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 1000px) {
     .s-about {
-        padding-top: calc(5 * var(--space));
+        padding-top: calc(1.5 * var(--space));
     }
     .s-about .horizontal-line {
         right: calc(4.6rem);
@@ -4240,7 +4240,8 @@ html.no-csstransitions .s-hero__content {
 
 @media screen and (max-width: 400px) {
     .s-about {
-        padding-top: var(--vspace-4);
+        /* padding-top: var(--vspace-4); */
+        padding-top: calc(1 * var(--space));
     }
     .s-about__process h3 {
         padding-left: 3em;
